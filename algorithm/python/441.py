@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/arranging-coins/
+
 def arrangeCoins(n):
     if n == 0:
         return 0

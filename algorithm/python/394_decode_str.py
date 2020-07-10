@@ -1,4 +1,4 @@
-#https://leetcode.com/problems/decode-string/submissions/
+#https://leetcode.com/problems/decode-string/
 
 def decodeString(s):
     result=''

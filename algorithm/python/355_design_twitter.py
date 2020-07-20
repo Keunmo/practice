@@ -125,4 +125,3 @@ twt.getNewsFeed(3)
 # twt.getNewsFeed(1)
 # twt.unfollow(1,2)
 # twt.getNewsFeed(1)
-

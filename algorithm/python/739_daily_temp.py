@@ -66,7 +66,26 @@ def dailyTemperatures(T):
     print(day)
     return day
 
+class Solution:
+    def dailyTemperatures(T):
+        stack = []
+        res = []
+        count = 0
+        for i in range(len(T)):
+            stack.append(T[i])
+            for j in T[i:]:
+                if j > stack[0]:
+                    
+                    stack.pop()
+                else:
+                    stack.append(j)
+                
 
+
+
+
+T 73 76 72 69 71 75 74 73
+s 73, 74, 75, 71, 69, 72, 76, 73
 # dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73])
 dailyTemperatures([4,2,1,6,5,4,7])
                  # 0,1,2,3,4,5,6

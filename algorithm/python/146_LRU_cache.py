@@ -10,7 +10,6 @@ class LRUCache:
     def get(self, key: int) -> int:
         print('get',key)
         print(self.cache)
-        #return value
         if key in self.cache:
             self.recent.remove(key)
             self.recent.insert(0,key)
@@ -25,9 +24,9 @@ class LRUCache:
     def put(self, key: int, value: int) -> None:
         print('put',key,value)
         if key in self.cache:
-            self.cache[key] = value
             self.recent.remove(key)
             self.recent.insert(0,key)
+            self.cache[key] = value
         else:
             if len(self.cache) == self.capacity:
                 del self.cache[self.recent.pop()]
